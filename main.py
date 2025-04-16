@@ -85,7 +85,7 @@ def successful_request(func):
             return sess, resp
         else:
             print(f'Request unsuccessful, status code: {resp.status_code}\n'
-                  f'url: {kwargs['url']}')
+                  f'url: {kwargs['req_url']}')
             sys.exit()
     return wrapper
 
